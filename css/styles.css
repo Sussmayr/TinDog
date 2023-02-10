@@ -60,14 +60,17 @@ p{
 }
 
 .title-image{
-    width: 60%;
+    max-width: 300px;
     transform: rotate(25deg);
+    position: absolute;
 }
 
 /* Features Secction */
 
 #features{
     padding: 7% 15%;
+    background-color: #fff;
+    position: relative;
 }
 
 .feature-box{
@@ -121,4 +124,42 @@ p{
 
 .pricing-column{
     padding: 3% 2%;
+}
+
+/* CTA  Secction */
+
+#cta{
+    background-color: #ff4c68;
+    color: #fff;
+    padding: 7% 15%;
+    text-align: center;
+}
+
+.cta-heading{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;  
+    line-height: 1.5;
+}
+
+/* footer  Secction */
+
+#footer{
+    text-align: center;
+    padding: 7% 15%;
+}
+
+.social-icon {
+    margin: 20px 10px;
+}
+
+@media (max-width: 1050px){
+
+    #title{
+        text-align: center;
+    }
+
+    .title-image{
+        position: static;
+        transform: rotate(0);
+    }
 }
